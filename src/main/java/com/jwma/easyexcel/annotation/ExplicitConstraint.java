@@ -1,16 +1,16 @@
-package com.jwma.easyexcel.anno;
+package com.jwma.easyexcel.annotation;
 
 import java.lang.annotation.*;
 
 /**
- * @author luolh
- * @version 1.0
- * @since 2020/6/2 11:38
+ * 字段显示约束
+ * @author majiwei
+ * @date 2020/6/8
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})
 public @interface ExplicitConstraint {
-    //定义固定下拉内容
+    // 定义固定下拉内容
     String[] dropDowns()default {};
 }

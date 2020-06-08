@@ -3,7 +3,7 @@ package com.jwma.easyexcel.handler;
 import com.alibaba.excel.write.handler.SheetWriteHandler;
 import com.alibaba.excel.write.metadata.holder.WriteSheetHolder;
 import com.alibaba.excel.write.metadata.holder.WriteWorkbookHolder;
-import com.jwma.easyexcel.anno.ExplicitConstraint;
+import com.jwma.easyexcel.annotation.ExplicitConstraint;
 import org.apache.poi.ss.usermodel.DataValidation;
 import org.apache.poi.ss.usermodel.DataValidationConstraint;
 import org.apache.poi.ss.usermodel.DataValidationHelper;
@@ -16,9 +16,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author luolh
- * @version 1.0
- * @since 2020/6/2 11:00
+ * 下拉菜单处理器
+ * @author majiwei
+ * @date 2020/6/8
  */
 public class DropDownSheetWriteHandler implements SheetWriteHandler {
 
@@ -75,7 +75,7 @@ public class DropDownSheetWriteHandler implements SheetWriteHandler {
         Field[] declaredFields = clazz.getDeclaredFields();
         for (int i = 0; i < declaredFields.length; i++) {
             Field field = declaredFields[i];
-            //解析注解信息
+            // 解析注解信息
             ExplicitConstraint explicitConstraint = field.getAnnotation(ExplicitConstraint.class);
           if(null != explicitConstraint){
               String[] explicitArray = explicitConstraint.dropDowns();

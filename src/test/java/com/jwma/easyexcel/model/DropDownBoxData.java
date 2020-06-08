@@ -1,7 +1,7 @@
 package com.jwma.easyexcel.model;
 
 import com.alibaba.excel.annotation.ExcelProperty;
-import com.jwma.easyexcel.anno.ExplicitConstraint;
+import com.jwma.easyexcel.annotation.ExplicitConstraint;
 import lombok.Data;
 
 import java.util.Date;
