@@ -10,8 +10,8 @@ import java.util.List;
 
 /**
  * 自定义EasyExcel写工厂
- * @author majiwei
- * @date 2020/4/22
+ * @author: majiwei
+ * @date: 2020/4/22
  */
 public class EasyExcelWriterFactory
 {
@@ -37,8 +37,10 @@ public class EasyExcelWriterFactory
     /**
      * 链式模板表头写入
      * @param headClazz 表头格式
-     * @param data 数据 List<ExcelModel> 或者List<List<Object>>
-     * @return
+     * @param data 数据 List-ExcelModel 或者List-List-Object
+     * @param sheetName sheet名称
+     * @param <T> 泛型
+     * @return EasyExcelWriterFactory
      */
     public <T> EasyExcelWriterFactory writeModel(Class<T> headClazz, List<T> data, String sheetName){
         excelWriter.write(data, EasyExcel.writerSheet(this.sheetNo++, sheetName).head(headClazz).build());
@@ -47,10 +49,11 @@ public class EasyExcelWriterFactory
 
     /**
      * 链式自定义表头写入
-     * @param head
-     * @param data 数据 List<ExcelModel> 或者List<List<Object>>
-     * @param sheetName
-     * @return
+     * @param head 表头数据
+     * @param data 数据 List-ExcelModel 或者List-List-Object
+     * @param sheetName sheet名称
+     * @param <T> 泛型
+     * @return EasyExcelWriterFactory
      */
     public <T> EasyExcelWriterFactory write(List<List<String>> head, List<T> data, String sheetName){
         excelWriter.write(data, EasyExcel.writerSheet(this.sheetNo++, sheetName).head(head).build());

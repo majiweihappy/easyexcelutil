@@ -12,9 +12,8 @@ import java.util.Map;
 
 /**
  * 默认按模型读取的监听器
- * @param <T>
- * @author majiwei
- * @date 2020/4/22
+ * @author: majiwei
+ * @date: 2020/4/22
  */
 @Slf4j
 public class DefaultExcelListener<T> extends AnalysisEventListener<T>
@@ -40,10 +39,8 @@ public class DefaultExcelListener<T> extends AnalysisEventListener<T>
 
     /**
      * 在转换异常 获取其他异常下会调用本接口。抛出异常则停止读取。如果这里不抛出异常则 继续读取下一行。
-     *
-     * @param exception
-     * @param context
-     * @throws Exception
+     * @param exception .
+     * @param context .
      */
     @Override
     public void onException(Exception exception, AnalysisContext context) {

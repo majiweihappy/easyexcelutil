@@ -9,7 +9,7 @@
         <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.jwma.easyexcel</groupId>
+    <groupId>com.github.majiweihappy</groupId>
     <artifactId>easyexcel</artifactId>
     <version>1.0-RELEASE</version>
 

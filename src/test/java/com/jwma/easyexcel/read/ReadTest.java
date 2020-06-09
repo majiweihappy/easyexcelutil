@@ -13,8 +13,8 @@ import java.util.Map;
 
 /**
 *  测试读文件
- * @author majiwei
- * @date 2020/6/5
+ * @author: majiwei
+ * @date: 2020/6/5
  */
 @RunWith(JUnit4.class)
 public class ReadTest
@@ -22,7 +22,7 @@ public class ReadTest
     private final String FILE_ROOT = getClass().getResource("/").getPath();
 
     /**
-     * 同步查询excel数据，返回原始的List<Map>>类型数据
+     * 同步查询excel数据，返回原始的List-Map类型数据
      */
     @Test
     public void testSyncRead(){
