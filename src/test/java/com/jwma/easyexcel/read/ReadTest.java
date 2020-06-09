@@ -13,8 +13,8 @@ import java.util.Map;
 
 /**
 *  测试读文件
- * @author: majiwei
- * @date: 2020/6/5
+ * @author majiwei
+ * @since 2020/6/5
  */
 @RunWith(JUnit4.class)
 public class ReadTest

@@ -17,8 +17,8 @@ import java.util.Map;
 
 /**
  * 下拉菜单处理器
- * @author: majiwei
- * @date: 2020/6/8
+ * @author majiwei
+ * @since 2020/6/8
  */
 public class DropDownSheetWriteHandler implements SheetWriteHandler {
 

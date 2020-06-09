@@ -4,8 +4,8 @@ import java.lang.annotation.*;
 
 /**
  * 字段显示约束
- * @author: majiwei
- * @date: 2020/6/8
+ * @author majiwei
+ * @since 2020/6/8
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

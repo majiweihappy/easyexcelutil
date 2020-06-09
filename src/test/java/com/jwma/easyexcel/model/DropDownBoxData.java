@@ -9,7 +9,7 @@ import java.util.Date;
 /**
 *  使用注解定义下拉框的数据
  * @author majiwei
- * @date 2020/6/5
+ * @since 2020/6/5
  */
 @Data
 public class DropDownBoxData

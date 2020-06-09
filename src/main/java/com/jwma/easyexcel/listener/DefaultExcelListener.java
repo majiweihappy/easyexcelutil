@@ -12,8 +12,8 @@ import java.util.Map;
 
 /**
  * 默认按模型读取的监听器
- * @author: majiwei
- * @date: 2020/4/22
+ * @author majiwei
+ * @since 2020/4/22
  */
 @Slf4j
 public class DefaultExcelListener<T> extends AnalysisEventListener<T>

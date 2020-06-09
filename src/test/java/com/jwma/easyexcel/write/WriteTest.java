@@ -20,7 +20,7 @@ import java.util.List;
 /**
 *  测试写文件
  * @author majiwei
- * @date 2020/6/5
+ * @since 2020/6/5
  */
 @RunWith(JUnit4.class)
 public class WriteTest

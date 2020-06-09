@@ -10,8 +10,8 @@ import java.util.List;
 
 /**
  * 自定义EasyExcel写工厂
- * @author: majiwei
- * @date: 2020/4/22
+ * @author majiwei
+ * @since 2020/4/22
  */
 public class EasyExcelWriterFactory
 {

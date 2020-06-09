@@ -18,8 +18,8 @@ import java.util.Set;
 
 /**
  * easyexcel工具类
- * @author: majiwei
- * @date: 2020/4/22
+ * @author majiwei
+ * @since 2020/4/22
  */
 public class EasyExcelUtil {
     /**
